@@ -1,0 +1,122 @@
+.loader-60devs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 10000;
+  opacity: 1;
+  transition: opacity 250ms 250ms;
+}
+
+.loader-60devs .loader-60devs-progress {
+  height: 2px;
+  width: 100%;
+  background-color: #2db7f5;
+  transition-property: transform, opacity;
+  transition-duration: 12s;
+  transition-timing-function: cubic-bezier(0.04, 0.9, 0.11, 0.9);
+  transform: translateX(-100%);
+}
+
+.loader-60devs[data-state="hidden"] {
+  display: none;
+}
+
+.loader-60devs[data-state="running"]::before {
+  content: '';
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader-60devs[data-state="running"] .loader-60devs-progress {
+  transform: translateX(0);
+}
+
+.loader-60devs[data-state="finishing"] {
+  opacity: 0;
+}
+
+.loader-60devs[data-state="finishing"] .loader-60devs-progress {
+  transform: scaleX(100) translateX(0);
+}
+
+.react-progress-bar-spinner {
+  display: block;
+  position: fixed;
+  top: 15px
+}
+
+.react-progress-bar-spinner-left {
+  left: 15px;
+  right: auto
+}
+
+.react-progress-bar-spinner-right {
+  left: auto;
+  right: 15px
+}
+
+.react-progress-bar-spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-top-color: #2db7f5;
+  border-left-color: #2db7f5;
+  border-radius: 50%;
+  -webkit-animation: react-progress-spinner .4s linear infinite;
+  animation: react-progress-spinner .4s linear infinite
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@-webkit-keyframes react-progress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes react-progress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}

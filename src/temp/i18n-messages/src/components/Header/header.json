@@ -1,0 +1,30 @@
+[
+  {
+    "id": "app.common.logout",
+    "defaultMessage": "退出"
+  },
+  {
+    "id": "app.menu.table1",
+    "defaultMessage": "表格示例"
+  },
+  {
+    "id": "app.menu.form1",
+    "defaultMessage": "表单组件"
+  },
+  {
+    "id": "app.menu.chart1",
+    "defaultMessage": "整合Echarts"
+  },
+  {
+    "id": "app.menu.router",
+    "defaultMessage": "404访问"
+  },
+  {
+    "id": "app.menu.redux1",
+    "defaultMessage": "Redux示例1"
+  },
+  {
+    "id": "app.menu.system1",
+    "defaultMessage": "其他页面"
+  }
+]
