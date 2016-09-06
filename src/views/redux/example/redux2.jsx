@@ -1,100 +1,51 @@
 import React, { Component, PropTypes } from 'react';
 import {connect} from 'react-redux';
 import { Table,Button,Modal,message,Upload, Icon, notification, Popconfirm, Tooltip } from 'antd';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
+export default class ReduxCom2 extends Component {
 
-class ReduxCom2 extends Component {
 
-
-    constructor(props){
+    constructor(props) {
         super(props);
+        this.state = {
+            items: ['hello', 'world', 'click', 'me']
+        };
     }
 
-    asyncIncrement() {
-        let {  onIncrement } = this.props;
-        setTimeout(function(){
-            onIncrement()
-        },2000);
+    handleAdd() {
+        var newItems =this.state.items.concat([prompt('Enter some text')]);
+        this.setState({items: newItems});
+    }
+
+    handleRemove(i) {
+        var newItems = this.state.items.slice();
+        newItems.splice(i, 1);
+        this.setState({items: newItems});
     }
 
     render() {
-
-        const { counterValue, onIncrement, onDecrement } = this.props;
-
+        var items = this.state.items.map(function (item, i) {
+            return (
+                <div key={item} onClick={this.handleRemove.bind(this, i)}>
+                    {item}
+                </div>
+            );
+        }.bind(this));
 
         return (
-
-
-            <div className="ant-row" style={{marginTop:20}}>
-
-
-                <div className='console-title-border console-title'>
-                    <div className="pull-left">
-                        <h5>redux1</h5>
-                    </div>
-                </div>
-
-
-
-                <div style={{ marginBottom: 16 }} className="btn-group">
-
-
-
-                    <Button
-                        onClick={onIncrement}
-                    >
-                        +1
-                    </Button>
-
-                    <Button
-                        onClick={onDecrement}
-
-                    >
-                        -1
-                    </Button>
-
-                    <Button
-
-
-                    >
-                        延时+2
-                    </Button>
-
-                </div>
-
-                <div>
-                    {counterValue}
-                </div>
-
+            <div>
+                <button onClick={this.handleAdd.bind(this)}>Add Item</button>
+                <ReactCSSTransitionGroup
+                    transitionName="example"
+                    transitionEnterTimeout={500}
+                    transitionLeaveTimeout={300}>
+                    {items}
+                </ReactCSSTransitionGroup>
             </div>
-
-
         );
-    }
 
+    }
 }
-
-
-const mapStateToProps = (state, ownProps) => {
-    return {
-        counterValue: state.counter
-    }
-};
-
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-
-
-
-    }
-
-};
-
-ReduxCom2 = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(ReduxCom2);
-
-export default ReduxCom2;
 

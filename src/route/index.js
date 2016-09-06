@@ -6,13 +6,13 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 
-// ÒýÈë
+// ï¿½ï¿½ï¿½ï¿½
 
-import Init from '../views/init.jsx'; // ³õÊ¼»¯Èë¿ÚÒ³Ãæ
+import Init from '../views/init.jsx'; // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
 
-import App from '../views/app/app.jsx'; //ºóÌ¨¹ÜÀí
+import App from '../views/app/app.jsx'; //ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½
 
-import Login from '../views/login/login.jsx';//µÇÂ¼Ò³
+import Login from '../views/login/login.jsx';//ï¿½ï¿½Â¼Ò³
 
 import NotFoundPage from '../views/app/NotFoundPage';
 
@@ -41,6 +41,7 @@ import System from '../views/others/system';
 
 import ReduxCom from '../views/redux/redux';
 import ReduxCom1 from '../views/redux/example/redux1';
+import ReduxCom2 from '../views/redux/example/redux2';
 
 const routes =(
 
@@ -85,6 +86,7 @@ const routes =(
             <Route path="redux" component={ReduxCom}>
 
                 <Route path="redux1" component={ReduxCom1} />
+                <Route path="redux2" component={ReduxCom2} />
             </Route>
 
             <Route path="system" component={System} />

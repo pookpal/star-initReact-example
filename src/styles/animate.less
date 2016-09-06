@@ -1,0 +1,25 @@
+.example-enter {
+  opacity: 0.5;
+  transform: scale(3,3);
+  color: #00ee00;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: scale(1,1);
+  color: #000;
+  transition: opacity 2000ms ease-in, transform 2s;
+}
+
+.example-leave {
+  opacity: 1;
+  transform: scale(1,1);
+  color: #00ee00;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.5;
+  transform: scale(5,5);
+  color: #00ee00;
+  transition: opacity 2000ms ease-in, transform 2s;
+}
