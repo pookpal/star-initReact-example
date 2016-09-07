@@ -33,6 +33,11 @@ A demo with star-initReact-example
 5. 自定义ant-design主题和局部样式
 
 
+
+## 测试账号
+admin
+123456
+
 ## 准备环境
 
 ```bash
