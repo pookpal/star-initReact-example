@@ -180,7 +180,7 @@ export default class ContentLists extends Component {
         Progress.show();
         this.setState({ loading: true });
         request
-            .get('http://api.randomuser.me')
+            .get('https://randomuser.me/api/')
             .query({
                 results: 10,
                 ...params

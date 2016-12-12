@@ -4,10 +4,14 @@
   "description": "react framework by lijie",
   "main": "src/src/entry/main.jsx",
   "scripts": {
-    "build": "SET BABEL_ENV=production && webpack --progress --profile --colors --config webpack.production.config.js",
-    "dev": "npm run build:i18n-js && SET BABEL_ENV=development && webpack-dev-server --progress --colors --hot",
-    "build:i18n-messages": "rimraf i18n-messages && SET BABEL_ENV=i18n&&babel --quiet src > c:nul",
-    "build:i18n-js": "npm run build:i18n-messages && babel-node --presets es2015 scripts/translate.js"
+    "build:mac": "BABEL_ENV=production webpack --progress --profile --colors --config webpack.production.config.js",
+    "dev:mac": "npm run build:i18n-js:mac && BABEL_ENV=development webpack-dev-server --progress --colors --hot",
+    "build:i18n-messages:mac": "rimraf i18n-messages && BABEL_ENV=i18n babel --quiet src > /dev/null",
+    "build:i18n-js:mac": "npm run build:i18n-messages:mac && babel-node --presets es2015 scripts/translate.js",
+    "build:win": "SET BABEL_ENV=production && webpack --progress --profile --colors --config webpack.production.config.js",
+    "dev:win": "npm run build:i18n-js:win && SET BABEL_ENV=development && webpack-dev-server --progress --colors --hot",
+    "build:i18n-messages:win": "rimraf i18n-messages && SET BABEL_ENV=i18n&&babel --quiet src > c:nul",
+    "build:i18n-js:win": "npm run build:i18n-messages:win && babel-node --presets es2015 scripts/translate.js"
   },
   "keywords": [
     "react"

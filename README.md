@@ -48,15 +48,18 @@ $ cd star-initReact-example
 $ npm install
 
 //如果平台是window可以直接执行以下脚本，如果平台是mac，请先修改package.json后再执行以下命令(具体修改方法见下方)
-$ npm run dev   //生产调试
+$ npm run dev:mac   //MAC环境下面打包部署命令
+$ npm run build:mac  // MAC环境下打包部署命令
+
+D:\www\star-initReact-example> npm run dev:win   // window下面开发调试
+D:\www\star-initReact-example> npm run build:win  // window环境下打包部署命令
 
 
-// mac下需要将package.json中如下两行脚本命令
-"build:i18n-messages": "rimraf i18n-messages && SET BABEL_ENV=i18n&&babel --quiet src > c:nul",
-"build:i18n-js": "npm run build:i18n-messages && babel-node --presets es2015 scripts/translate.js"
-//替换成如下
-"build:i18n-messages": "rimraf i18n-messages && BABEL_ENV=i18n babel --quiet src > /dev/null",
-"build:i18n-js": "npm run build:i18n-messages && babel-node --presets es2015 scripts/translate.js"
+
+
+
+
+
 ```
 
 想要更好的开发体验，还需安装两个 Chrome 插件：[Redux DevTools](https://chrome.google.com/webstore/detail/lmhkpmbekcpmknklioeibfkpmmfibljd) 和 [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) 。
