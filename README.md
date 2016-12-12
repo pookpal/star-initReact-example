@@ -69,18 +69,19 @@ D:\www\star-initReact-example> npm run build:win  // window环境下打包部署
 ## 启动调试
 
 ```bash
-$ npm run dev
+### 此演示脚本为mac环境下运行
+$ npm run dev:mac
 ```
 
 ## 打包构建代码
 
 ```bash
-
+### 此演示脚本为mac环境下运行
 // 生成国际化文件供配置
-$ npm run build:i18n-js
+$ npm run build:i18n-js:mac
 
 // 配置国际化文件后打包构建生成最终部署代码
-$ npm run build
+$ npm run build:mac
 
 ```
 
