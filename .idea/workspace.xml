@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3682be4e-d925-4046-a60a-a33845bb87d0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/05301597733283ce3728f0d52117cc3c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/data/beijing.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/data/xianggang.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/iconFont/iconfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/en-US.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/en-US.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/style.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/zh-CN.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/video/content/content.lists.jsx" afterPath="$PROJECT_DIR$/src/views/video/content/content.lists.jsx" />
     </list>
     <ignored path="react-pookpal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="258">
-                <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+              <first_editor relative-caret-position="372">
+                <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -365,12 +339,12 @@
       <workItem from="1471307963452" duration="2428000" />
       <workItem from="1471931643238" duration="22000" />
       <workItem from="1473160549149" duration="1183000" />
-      <workItem from="1481512169688" duration="1406000" />
+      <workItem from="1481512169688" duration="1526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27088000" />
+    <option name="totallyTimeSpent" value="27208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -689,8 +663,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="258">
-            <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <first_editor relative-caret-position="372">
+            <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
             <folding />
           </first_editor>
           <second_editor />

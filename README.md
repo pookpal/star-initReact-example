@@ -47,10 +47,12 @@ $ npm install -g webpack rimraf
 $ cd star-initReact-example
 $ npm install
 
-//如果平台是window可以直接执行以下脚本，如果平台是mac，请先修改package.json后再执行以下命令(具体修改方法见下方)
+//mac环境下命令行
 $ npm run dev:mac   //MAC环境下面打包部署命令
 $ npm run build:mac  // MAC环境下打包部署命令
 
+
+//window环境下命令行
 D:\www\star-initReact-example> npm run dev:win   // window下面开发调试
 D:\www\star-initReact-example> npm run build:win  // window环境下打包部署命令
 
